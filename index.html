@@ -52,10 +52,10 @@
         <div>
           <a class="logo" href="#">Hailey<span class="text-primary">Bot</span></a>
         </div>
-        <div class="btn buy-button">
+        <div class="btn buy-button hide-mobile">
           <a href="https://invite.haileybot.com" target="_blank" class="btn btn-primary">Add Bot</a>
         </div>
-        <div class="btn buy-button">
+        <div class="btn buy-button hide-mobile">
           <a href="https://server.haileybot.com" target="_blank" class="btn btn-outline-primary">Join Server</a>
         </div>
         <!--end login button-->
@@ -77,6 +77,8 @@
         <div id="navigation">
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
+            <li><a href="https://docs.haileybot.com" target="_blank" class="text-primary show-mobile">Add Bot</a></li>
+            <li><a href="https://docs.haileybot.com" target="_blank" class="text-primary show-mobile">Join Server</a></li>
             <li><a href="https://www.haileybot.com">Home</a></li>
             <li><a href="https://docs.haileybot.com" target="_blank">Docs</a></li>
             <li><a href="https://github.com/HaileyBot" target="_blank">GitHub</a></li>
@@ -243,6 +245,16 @@
     function updatePrice() {
       document.getElementById("dollar-amount").innerHTML = document.getElementById("image-type").selectedIndex ? "$7" : "$5";
     }
+
+    let show = Array.prototype.slice.call(document.getElementsByClassName("show-mobile"));
+    show.forEach(e => {
+      if (!window.mobilecheck()) e.style.display = "none";
+    })
+
+    let hide = Array.prototype.slice.call(document.getElementsByClassName("hide-mobile"));
+    hide.forEach(e => {
+      if (window.mobilecheck()) e.style.display = "none";
+    })
   </script>
 
 </html>
