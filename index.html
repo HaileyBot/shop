@@ -52,10 +52,10 @@
         <div>
           <a class="logo" href="#">Hailey<span class="text-primary">Bot</span></a>
         </div>
-        <div class="btn buy-button hide-mobile">
+        <div class="buy-button hide-mobile">
           <a href="https://invite.haileybot.com" target="_blank" class="btn btn-primary">Add Bot</a>
         </div>
-        <div class="btn buy-button hide-mobile">
+        <div class="buy-button hide-mobile" style="padding-right: 0.25em">
           <a href="https://server.haileybot.com" target="_blank" class="btn btn-outline-primary">Join Server</a>
         </div>
         <!--end login button-->
@@ -78,11 +78,27 @@
           <!-- Navigation Menu-->
           <ul class="navigation-menu">
             <li class="show-mobile"><a href="https://invite.haileybot.com" target="_blank" class="text-primary">Add Bot</a></li>
-            <li class="show-mobile"><a href="https://server.haileybot.com" target="_blank" class="text-primary">Join Server</a><hr style="opacity: 25%"></li>
+            <li class="show-mobile"><a href="https://server.haileybot.com" target="_blank" class="text-primary">Join Server</a>
+              <hr style="opacity: 25%; margin-top: 10px; margin-bottom: 10px">
+            </li>
             <li><a href="https://www.haileybot.com">Home</a></li>
-            <li><a href="https://docs.haileybot.com" target="_blank">Docs</a></li>
-            <li><a href="https://github.com/HaileyBot" target="_blank">GitHub</a></li>
-            <li><a href="#">Shop</a></li>
+            <li class="has-submenu">
+              <a>Bot</a><span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li><a class="text-primary">Shop <span class="badge badge-success nav-menu-left nav-menu-badge">New</span></a></li>
+                <li><a href="https://github.com/HaileyBot">GitHub</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a>Docs</a><span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li><a href="https://docs.haileybot.com/">Overview</a></li>
+                <li><a href="https://faq.haileybot.com">Frequently Asked</a></li>
+                <hr style="opacity: 25%; margin: 20px; margin-top: 10px; margin-bottom: 10px">
+                <li><a href="https://license.haileybot.com" target="_blank">License<span class="mdi mdi-open-in-new rem-1 nav-menu-left nav-menu-icon"></span></a></li>
+                <li><a href="https://eula.haileybot.com" target="_blank">EULA<span class="mdi mdi-open-in-new rem-1 nav-menu-left nav-menu-icon"></span></a></li>
+              </ul>
+            </li>
           </ul>
           <!--end navigation menu-->
         </div>
@@ -246,14 +262,24 @@
       document.getElementById("dollar-amount").innerHTML = document.getElementById("image-type").selectedIndex ? "$7" : "$5";
     }
 
-    let show = Array.prototype.slice.call(document.getElementsByClassName("show-mobile"));
-    show.forEach(e => {
-      if (!window.mobilecheck()) e.style.display = "none";
+    let e = Array.prototype.slice.call(document.getElementsByClassName("show-mobile"));
+    e.forEach(a => {
+      if (!window.mobilecheck()) a.style.display = "none";
     })
 
-    let hide = Array.prototype.slice.call(document.getElementsByClassName("hide-mobile"));
-    hide.forEach(e => {
-      if (window.mobilecheck()) e.style.display = "none";
+    e = Array.prototype.slice.call(document.getElementsByClassName("hide-mobile"));
+    e.forEach(a => {
+      if (window.mobilecheck()) a.style.display = "none";
+    })
+
+    e = Array.prototype.slice.call(document.getElementsByClassName("nav-menu-badge"));
+    e.forEach(a => {
+      if (window.mobilecheck()) a.style.marginBottom = "7px";
+    })
+
+    e = Array.prototype.slice.call(document.getElementsByClassName("nav-menu-icon"));
+    e.forEach(a => {
+      if (window.mobilecheck()) a.style.paddingBottom = "4px";
     })
   </script>
 
