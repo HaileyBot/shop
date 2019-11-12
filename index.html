@@ -53,7 +53,8 @@
 </head>
 
 <body>
-  <!-- Loader -->
+
+  <!-- Loading animation -->
   <div id="preloader">
     <div id="status">
       <div class="spinner">
@@ -62,26 +63,27 @@
       </div>
     </div>
   </div>
-  <!-- Loader -->
 
-  <!-- Navbar STart -->
+  <!-- Header -->
   <header id="topnav" class="defaultscroll sticky">
     <div class="container">
-      <!-- Logo container-->
+
+      <!-- Logo -->
       <div>
         <a class="logo" href="#">Hailey<span class="text-primary">Bot</span></a>
       </div>
+
+      <!-- Invite Buttons -->
       <div class="buy-button hide-mobile">
         <a href="https://invite.haileybot.com" target="_blank" class="btn btn-primary">Add Bot</a>
       </div>
       <div class="buy-button hide-mobile" style="padding-right: 0.25em">
         <a href="https://server.haileybot.com" target="_blank" class="btn btn-outline-primary">Join Server</a>
       </div>
-      <!--end login button-->
-      <!-- End Logo container-->
+
+      <!-- Mobile Tray Toggle -->
       <div class="menu-extras">
         <div class="menu-item">
-          <!-- Mobile menu toggle-->
           <a class="navbar-toggle">
             <div class="lines">
               <span></span>
@@ -89,18 +91,26 @@
               <span></span>
             </div>
           </a>
-          <!-- End mobile menu toggle-->
         </div>
       </div>
 
+      <!-- Navigation -->
       <div id="navigation">
-        <!-- Navigation Menu-->
         <ul class="navigation-menu">
-          <li class="show-mobile"><a href="https://invite.haileybot.com" target="_blank" class="text-primary">Add Bot</a></li>
-          <li class="show-mobile"><a href="https://server.haileybot.com" target="_blank" class="text-primary">Join Server</a>
+
+          <!-- Mobile Invites -->
+          <li class="show-mobile buy-button">
+            <span><a href="https://invite.haileybot.com" target="_blank" class="btn btn-block btn-primary">Add Bot</a></span>
+          </li>
+          <li class="show-mobile buy-button">
+            <span><a href="https://server.haileybot.com" target="_blank" class="btn btn-block btn-outline-primary">Join Server</a></span>
             <hr style="opacity: 25%; margin-top: 10px; margin-bottom: 10px">
           </li>
+
+          <!-- Nav Row 1 -->
           <li><a href="https://www.haileybot.com">Home</a></li>
+
+          <!-- Nav Row 2 -->
           <li class="has-submenu">
             <a>Bot</a><span class="menu-arrow"></span>
             <ul class="submenu">
@@ -108,6 +118,8 @@
               <li><a href="https://github.com/HaileyBot">GitHub</a></li>
             </ul>
           </li>
+
+          <!-- Nav Row 3 -->
           <li class="has-submenu">
             <a>Docs</a><span class="menu-arrow"></span>
             <ul class="submenu">
@@ -118,16 +130,14 @@
               <li><a href="https://eula.haileybot.com" target="_blank">EULA<span class="mdi mdi-open-in-new rem-1 nav-menu-right nav-menu-icon"></span></a></li>
             </ul>
           </li>
-        </ul>
-        <!--end navigation menu-->
-      </div>
-    </div>
-    <!--end container-->
-  </header>
-  <!--end header-->
-  <!-- Navbar End -->
 
-  <!-- Hero Start -->
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Jumbotron -->
   <section class="bg-half bg-light">
     <div class="home-center">
       <div class="home-desc-center">
@@ -142,32 +152,33 @@
                 </ul>
               </div>
             </div>
-            <!--end col-->
           </div>
-          <!--end row-->
         </div>
-        <!--end container-->
       </div>
     </div>
+
+    <!-- Background Design Image -->
     <div class="container-fluid">
       <div class="row">
         <div class="home-shape-bottom">
           <img src="https://www.haileybot.com/images/shapes/round-white.png" alt="" class="img-fluid mx-auto d-block">
         </div>
       </div>
-      <!--end row-->
     </div>
-  </section>
-  <!--end section-->
-  <!-- Hero End -->
 
-  <!-- Job apply form Start -->
+  </section>
+
+  <!-- Shop -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10 col-md-7">
+
+          <!-- Custom Rank -->
           <div class="custom-form">
             <form class="rounded shadow p-4" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+              <!-- Description -->
               <div class="row">
                 <div style="padding-left: 15px; padding-right: 15px">
                   <h4>Global Chat Custom Rank</h4>
@@ -187,7 +198,9 @@
                 </div>
               </div>
 
+              <!-- Form -->
               <div class="row">
+
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="hidden" name="cmd" value="_s-xclick">
@@ -219,52 +232,65 @@
                     <i class="mdi mdi-bitcoin"></i>
                     <i class="mdi mdi-ethereum"></i>
                     <div style="font-size: 0.7em; margin-bottom: -0.5em" class="hide-mobile">For information on making a purchase using<br>crypto, message <b>@cheesits#0456</b> on Discord</div>
-
                   </span>
                   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </div>
-                <!--end row-->
+
               </div>
+
             </form>
-            <!--end form-->
           </div>
-          <!--end custom-form-->
+
         </div>
       </div>
     </div>
+
+    <!-- Background Design Image -->
     <div class="container-fluid">
       <div class="row">
         <div class="home-shape-bottom">
           <img src="https://www.haileybot.com/images/shapes/round-dark.png" alt="" class="img-fluid mx-auto d-block">
         </div>
       </div>
-      <!--end row-->
     </div>
-    <!--end container-->
-  </section>
-  <!--end section-->
-  <!-- Job apply form End -->
 
-  <!-- Footer Start -->
+  </section>
+
+  <!-- Footer -->
   <footer class="footer footer-bar">
     <div class="container text-center">
-      <div class="row align-items-center">
-        <div class="col-sm-6">
-          <div class="text-sm-left">
-            <a class="logo-footer" href="#">Hailey<span class="text-primary">Bot</span></a>
-            <p class="mb-0">© 2019 cheesits#0456</p>
+      <div class="row align-items-top">
+
+        <!-- Column 1 -->
+        <div class="col-sm-3 text-sm-left">
+          <h1 class="text-light mb-0">Hailey<span class="text-primary">Bot</span></h1>
+          <div class="small">© 2019 cheesits#0456</div>
+          <div class="pt-4 pb-4 text-light">
+            <div><i class="mdi mdi-github-circle"></i> <a href="https://github.com/HaileyBot" target="_blank" class="text-foot">GitHub</a></div>
+            <div><i class="mdi mdi-email"></i> <a href="mailto:contact@haileybot.com" target="_blank" class="text-foot">Email</a></div>
           </div>
         </div>
-        <!--end col-->
-      </div>
-      <!--end row-->
-    </div>
-    <!--end container-->
-  </footer>
-  <!--end footer-->
-  <!-- Footer End -->
 
-  <!-- javascript -->
+        <!-- Column 2 -->
+        <div class="col-sm-5"></div>
+
+        <!-- Column 3 -->
+        <div class="col-sm-4 text-sm-left pr-4">
+          <h5 class="title mb-0 text-center pb-1">Leave a Review</h5>
+          <form action="https://send.pageclip.co/hwoikyF60ELMiAxZ2d4ZpqJOqACkJnlP/reviews" class="pageclip-form pr-2 pl-2" method="post">
+            <div class="form-group mb-0">
+              <input name="tag" type="text" class="form-control" placeholder="Username#0000" required>
+              <textarea name="review" rows="4" class="form-control mt-1 mb-1" required placeholder="Write a review here"></textarea>
+              <button type="submit" name="send" class="btn btn-block btn-primary pageclip-form__submit">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
   <script src="https://www.haileybot.com/js/jquery.min.js"></script>
   <script src="https://www.haileybot.com/js/bootstrap.bundle.min.js"></script>
   <script src="https://www.haileybot.com/js/jquery.easing.min.js"></script>
